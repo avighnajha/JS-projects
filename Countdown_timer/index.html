@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="/Countdown_timer/style.css">
+    <script src="/Countdown_timer/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="heading">Want to set a timer?</h1>
+    <div class="container">
+        <div>
+            <a id="days">0</a>
+            <span>Days</span>
+        </div>
+        <div>
+            <a id="hours">0</a>
+            <span>hours</span>
+        </div>
+        <div>
+            <a id="mins">0</a>
+            <span>Minutes</span>
+        </div>
+        <div>
+            <a id="secs">0</a>
+            <span>Seconds</span>
+        </div>
+    </div>
+    <div id="form">
+        <span>What is it for?</span><input  id="occasion" type="text">
+        <br>
+        <span>When is it?</span><input  id="when" type="date">
+    </div>
+    <button onclick="submit()" id="submit">Submit</button>
+
+    <script src="/Countdown_timer/script.js"></script>
+</body>
+</html>

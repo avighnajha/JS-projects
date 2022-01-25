@@ -1,0 +1,46 @@
+body {
+    background-image: url(/Countdown_timer/beachbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0vh;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+}
+.container div a{
+    color:crimson;
+}
+#heading {
+    margin-top: 10vh;
+    font-size: 3rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+#form span {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+#submit {
+    margin-top: 4%;
+    padding: 1% 5%;
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+}
+:root{
+    --left-bg-color:rgba(87, 84, 236, 0.7);
+    --right-bg-color:rgba(43, 43, 43, 0.8);
+    --hoverwidth:75%;
+    --otherwidth:25%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    left:50%;
+    top: 40%;
+    transform: translateX(-50%);
+    white-space:nowrap ;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    left: 0;
+    background: url("https://github.com/bradtraversy/50projects50days/blob/master/split-landing-page/ps.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+}
+
+.split.right {
+    right: 0;
+    background: url("https://github.com/bradtraversy/50projects50days/blob/master/split-landing-page/xbox.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.split.right::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
+}
+.btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: white;
+    border: white solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+    transition: background-color 0.5s ease;
+}
+.btn.ps:hover {
+    background-color: rgba(24, 21, 218, 1);
+}
+.btn.xbox:hover {
+    background-color: rgba(2, 118, 19, 1);
+}
+
+
+.hover-left .left{
+    width: var(--hoverwidth);
+}
+.hover-left .right{
+    width: var(--otherwidth);
+}
+
+.hover-right .right{
+    width: var(--hoverwidth);
+}
+.hover-right .left{
+    width: var(--otherwidth);
+}
+.split.right, .split.left, .split.left::before, .split.right::before {
+    transition: width 1s ease;
+}
+
+@media(max-width:800px){
+    h1 {
+        font-size: 2rem;
+        top: 45%;
+    }
+    .btn {
+        width: 12rem;
+        padding: 1.2rem;
+    }
+}

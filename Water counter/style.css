@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #2885E3;
+    position: relative;
+    color: white;
+}
+.container{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bigbottle{
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius: 30px;
+    border:solid 3px darkblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: darkblue;
+    text-align: center;
+    font-weight: bold;
+    flex-direction: column;
+    overflow: hidden;
+}
+.bigbottle h3{
+    text-align: center;
+    color: darkblue;
+    position: relative;
+}
+
+.smallbottles{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottles {
+    display: flex;
+    border: solid 3px darkblue;
+    height: 60px;
+    width: 40px;
+    margin: 10px 20px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: white;
+    color: darkblue;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.bottles.full{
+    background-color: #2885E3;
+    color: white;
+}
+.remained{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.percentage{
+    background-color: #2885E3;
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+    height: 20px;
+    transition: 0.3s ease;
+    color: white;
+}
